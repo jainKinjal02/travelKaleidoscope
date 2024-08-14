@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import TravelKaleidoscope from './TravelKaleidoscope';
 import './App.css';
 
-function App() {
+const App = () => {
+  const images = [
+    '/image1.jpg',
+    '/image2.jpg',
+    '/image3.jpg',
+    '/image4.jpg',
+    '/image5.jpg',
+    '/image6.jpg',
+    '/image7.jpg',
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Travel Kaleidoscope</h1>
+      <TravelKaleidoscope images={images} />
     </div>
   );
-}
+};
 
 export default App;
